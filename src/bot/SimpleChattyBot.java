@@ -51,8 +51,8 @@ public class SimpleChattyBot {
                 "3. To determine the execution time of a program.",
                 "4. To interrupt the execution of a program."};
         while (true) {
-            for (int i = 0;i < questions.length;i++) {
-                System.out.println(questions[i]);
+            for (String question : questions) {
+                System.out.println(question);
             }
             if (scanner.nextInt() == 2) {
                 break;
